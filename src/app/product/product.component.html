@@ -1,0 +1,10 @@
+<div class="float-left w-25" *ngFor="let prod of data">
+    <div class="m-4">
+        <img [src]="prod.image" width="100%">
+        <div class="p-2">
+            {{ prod.pro_name}}
+            <br>
+            {{prod.price}}
+        </div>
+    </div>
+</div>

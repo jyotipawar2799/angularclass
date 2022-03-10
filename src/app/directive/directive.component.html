@@ -1,0 +1,65 @@
+<p>directive works!</p>
+<!-- <div [ngStyle]="{'font-size':'20px','background-color':'red'}">
+    ng Style1
+</div>
+<div [ngStyle]="style_obj">
+    ng Style 2
+</div>
+<button (click)="change()">Click</button> -->
+
+<!--  ngclass -->
+<!-- <div [ngClass]="class_obj">A2Z</div>
+<button (click)="makeItCircle()">makeItCircle</button> -->
+
+<!-- ngif -->
+<!-- <div *ngIf="username=='a2z@gmail.com'">welcome A2Z</div>
+<div *ngIf="username!='a2z@gmail.com'">Welcome Other</div>
+
+<div *ngIf="password">password</div>
+<div *ngIf="val1">val1 empty val false</div>
+<div *ngIf="val2">val2 string is true</div>
+<div *ngIf="val3">val3 0 is false</div>
+<div *ngIf="val4">val4 1 or -1 is true</div>
+<div *ngIf="val5">val5 null is false</div>
+
+<div>
+    <span *ngIf="arr[0]">{{arr[0]}} </span><br>
+    <span *ngIf="arr[1]">{{arr[1]}} </span><br>
+    <span *ngIf="arr[2]">{{arr[2]}} </span><br>
+    <span *ngIf="arr[3]">{{arr[3]}} </span><br>
+    <span *ngIf="arr[4]">{{arr[4]}} sndbh</span>
+</div> -->
+
+<!-- ng for -->
+<!-- <div *ngFor="let value of data">
+    {{value}}
+</div>
+
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Mobile</td>
+    </tr>
+    <tr *ngFor="let obj of arr1">
+        <td>{{obj.id}} </td>
+        <td>{{obj.name}} </td>
+        <td>{{obj.mob}} </td>
+    </tr>
+</table> -->
+
+<div *ngFor="let val of values">
+    <div [ngSwitch]="val">
+        <div *ngSwitchCase="1">one</div>
+<div *ngSwitchCase="2">two</div>
+<div *ngSwitchCase="3">three</div>
+<div *ngSwitchCase="4">four</div>
+<div *ngSwitchCase="5">five</div>
+<div *ngSwitchCase="6">six</div>
+<div *ngSwitchCase="7">seven</div>
+<div *ngSwitchCase="8">eight</div>
+<div *ngSwitchCase="9">nine</div>
+<div *ngSwitchCase="0">zero</div>
+<div *ngSwitchDefault>Not found</div>
+    </div>
+</div>

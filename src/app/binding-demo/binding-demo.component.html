@@ -1,0 +1,114 @@
+<h1 style="text-align: center;">Binding demo</h1>
+<!-- <div style="padding-top: 200px;">
+    <button (click)="sub()" class="but1">-</button>
+<textarea [style.font-size]="fsize" [style.font-family]="font_family" class="texta">Type Here...</textarea>
+<button (click)="add()" class="but2">+</button>
+
+<div class="selectd">
+    <select (change)="fmily_change($event)" class="selectb">
+        <option value="sans-serif">sans-serif</option>
+        <option value="monospace">monospace</option>
+        <option value="serif">serif</option>
+        <option value="cursive">cursive</option>
+        <option value="fantasy">fantasy</option>
+    </select>
+</div>
+
+</div> -->
+<!-- 
+<div class="div1" [style.display]="bk">
+    <input type="text" (keyup)="set_name($event)" [value]="name"><br><br>
+    <input type="text" (keyup)="set_number($event)" [value]="number"><br><br>
+    <button (click)="set_value()" class="save">save</button>
+</div>
+<div class="div2" [style.display]="nn">
+    <input type="text" [value]="name"><br><br>
+    <input type="text" [value]="number"><br><br>
+    <button (click)="get_value()" class="addagain">Add again</button>
+</div> -->
+
+    <!-- <div class="formbox">
+        <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit()" >
+           <input type = "text" class = "fortextbox" name = "name" placeholder = "Enter name" 
+              formControlName="name"> &nbsp;
+           <input type="number" class="fortextbox" name="mobile" placeholder = "Enter mobile" 
+              formControlName="mobile">&nbsp;
+           <input type = "text" class = "fortextbox" name = "email" placeholder = "emailid" 
+              formControlName="email">&nbsp;          
+           <input type = "date" class = "fortextbox" name="dob" 
+              placeholder = "dob" formControlName = "dob">
+           <br>
+           <br>
+           <button type = "submit" class = "forsubmit" value = "Log In">Save</button>
+        </form>
+     </div>
+     <br>
+     <br>
+
+<div  class="table">
+    <table border="1">
+        <tr>
+            <td>S.N</td>
+            <td>Name</td>
+            <td>Mobile</td>
+            <td>Email</td>
+            <td>DOB</td>
+        </tr>
+        <tr *ngFor="let value of data;let i=index">
+            <td>{{i+1}} </td>
+            <td>{{value.name}} </td>
+            <td>{{value.mobile}} </td>
+            <td>{{value.email}} </td>
+            <td>{{value.dob}} </td>
+        </tr>
+    </table>
+</div> -->
+
+<!-- class solving -->
+<div class="w-25">
+    Enter Name:
+    <input type="text" class="w-100" [(ngModel)]="name">
+</div>
+<div class="w-25">
+    Enter Mobile:
+    <input type="number" class="w-100" [(ngModel)]="mobile">
+</div>
+<div class="w-25">
+    Enter Email:
+    <input type="email" class="w-100" [(ngModel)]="email">
+</div>
+<div class="w-25">
+    Enter Dob:
+    <input type="date" class="w-100" [(ngModel)]="dob">
+</div>
+<br>
+<br>
+<button (click)="save_data()" class="savebtn">Save</button>
+
+<br>
+<br>
+<br>
+
+
+
+
+<div  class="table">
+    <table border="1" width="50%">
+        <tr>
+            <td>action</td>
+            <td>S.N</td>
+            <td>Name</td>
+            <td>Mobile</td>
+            <td>Email</td>
+            <td>DOB</td>
+        </tr>
+        <tr *ngFor="let value of data;let i=index">
+            <td><button (click)="deleteRow(i)">remove</button></td>
+            <td>{{i+1}} </td>
+            <td>{{value.name}} </td>
+            <td>{{value.mobile}} </td>
+            <td>{{value.email}} </td>
+            <td>{{value.dob}} </td>
+        </tr>
+    </table>
+</div>

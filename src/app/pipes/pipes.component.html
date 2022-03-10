@@ -1,0 +1,25 @@
+<p>pipes works!</p>
+
+{{small | uppercase}}
+<br>
+{{capital | lowercase}}
+<br>
+{{small | titlecase}} -{{capital | titlecase}}
+<br>
+Date:{{today | date:'fullDate'}}
+<br>
+{{small | slice:2}}
+<br>
+{{small | slice:3:7}}
+<br>
+INR:{{amt | currency:'INR'}}
+<br>
+USD:{{amt | currency:'USD'}}
+<br>
+EUR:{{amt | currency:'EUR'}}
+<br>
+{{obj | json}}
+<br>
+number:{{7356.1 | number:'1.2-5'}}
+<!-- 2=Minimum no.of decimal digit -->
+<!-- 2=Maximum no.of decimal digit -->
